@@ -1,6 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Nathan Pannell
+% Template Author : Aras Güngöre
 % License : MIT
 %------------------------
 
@@ -21,7 +22,6 @@
 \usepackage{fontawesome}
 \input{glyphtounicode}
 
-
 %---------- FONT OPTIONS ----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -32,7 +32,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -70,7 +69,6 @@
   }
 }
 
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -79,14 +77,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-
 \newcommand{\resumeSubSubheading}[2]{
     \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 
 \newcommand{\resumeEducationHeading}[6]{
   \vspace{-2pt}\item
@@ -97,14 +93,12 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-
 \newcommand{\resumeProjectHeading}[2]{
     \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-
 
 \newcommand{\resumeOrganizationHeading}[4]{
   \vspace{-2pt}\item
@@ -126,7 +120,6 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %---------- HEADING ----------
@@ -147,26 +140,21 @@
     \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/University+of+Victoria/@48.4631345,-123.3147566,17z/data=!3m1!4b1!4m6!3m5!1s0x548f71575d850fbd:0xc039d0b85e1ede74!8m2!3d48.4631345!4d-123.3121763!16zL20vMDd3bHQ?entry=ttu}{Victoria, BC}
 \end{center}
 
-
-
 %----------- EDUCATION -----------
 
 \section{Education}
   \vspace{3pt}
   \resumeSubHeadingListStart
-    
     \resumeEducationHeading
       {University of Victoria}{Victoria, BC}
-      {B.Sc. of Computer Science (Honours) |   \textbf{GPA: 3.8/4.0}}{Sep 2021 \textbf{--} Dec 2025}
+      {B.Sc. of Computer Science (Honours) | \textbf{GPA: 3.8/4.0}}{Sep 2021 \textbf{--} Dec 2025}
       {Award of Excellence Scholarship}{Jun 2021}
         \resumeSubHeadingListStart
         \small{\item{
             \textbf{Relevant coursework:} Object-oriented and functional programming, algorithms, data structures, operating systems, matrix algebra, computer architecture, statistics, calculus, relational databases, numerical methods.
             }}
         \resumeSubHeadingListEnd
-    
   \resumeSubHeadingListEnd
-
 
 %----------- EXPERIENCE -----------
 
@@ -178,31 +166,31 @@
       {UVic AI}{Victoria, BC}
       {Simulation Executive}{Jan 2024 \textbf{--} Present, Part-time}
         \resumeItemListStart
-            \resumeItem{Co-hosted UVic AI’s 2024 hackathon and developed a framework to process and represent 10+ entrants.}
-            \resumeItem{Led team developing a Python simulation environment for the Canadian Undergraduate Conference on AI.}
+            \resumeItem{\textbf{Co-hosted UVic AI’s 2024 hackathon} and developed a framework to process and represent entrants.}
+            \resumeItem{Led team developing a Python simulation environment for the \href{https://www.cucai.ca}{Canadian Undergraduate Conference on AI.}}
         \resumeItemListEnd
 
     \resumeSubheading
-      {Sidekick Players}{Remote}
+      {Sidekick Players $|$ \emph{\href{https://www.sidekickplayers.ca/}{\color{blue}Website}}}{Remote}
       {Front-end Web Developer}{Sep 2023 \textbf{--} Present, Freelance}
         \resumeItemListStart
-            \resumeItem{Designed a modern website in collaboration with the organization’s president, using React and Tailwind.}
-            \resumeItem{Managed migration including acquiring a new domain, rerouting previous website, and hosting with Vercel.}
+            \resumeItem{Designed a modern website in collaboration with the organization’s president, using \textbf{React} and \textbf{Tailwind.}}
+            \resumeItem{\textbf{Managed migration} including acquiring a new domain, rerouting previous website, and hosting with Vercel.}
         \resumeItemListEnd
 
     \resumeSubheading
       {AMJ Campbell}{Delta, BC}
       {Business Automation Developer}{May 2023 \textbf{--} Aug 2023, Internship}
         \resumeItemListStart
-            \resumeItem{Implemented a suite of automation macros to save 20+ hours of work weekly, by using VBA to download, process, and present data in detailed spreadsheet reports and ready-to-send emails for clients.}
-            \resumeItem{Improved efficiency by 1 hour per day by integrating Google Maps API to automate mileage cost calculation.}
+            \resumeItem{Implemented a suite of automation macros to save \textbf{20+ hours of work} weekly, by using VBA to download, process, and present data in detailed spreadsheet reports and ready-to-send emails for clients.}
+            \resumeItem{Improved efficiency by \textbf{1 hour per day} by integrating \textbf{Google Maps API} to automate mileage cost calculation.}
         \resumeItemListEnd
 
     \resumeSubheading
       {AMJ Campbell}{Delta, BC}
       {Accounting Clerk}{May 2022 \textbf{--} Sep 2022, Internship}
         \resumeItemListStart
-            \resumeItem{Developed Excel templates to reduce error, and introduced VBA macros to batch process CSV reports.}
+            \resumeItem{Developed Excel templates to \textbf{reduce errors by 50\%}, and introduced \textbf{VBA macros} to process CSV reports.}
             \resumeItem{Executed payroll, accounts payable, and accounts receivable duties for Vancouver, Kelowna, and Victoria.}
         \resumeItemListEnd
 
@@ -210,13 +198,10 @@
       {Niagara Falls Restaurant}{Delta, BC}
       {Server}{Nov 2018 \textbf{--} Jul 2021, Part-time}
         \resumeItemListStart
-            \resumeItem{Mastered clear communication, customer service, and multi-tasking in a high-pressure environment.}
+            \resumeItem{Mastered \textbf{clear communication}, customer service, and multi-tasking in a high-pressure environment.}
         \resumeItemListEnd
-
     
   \resumeSubHeadingListEnd
-
-
 
 %----------- AWARDS & ACHIEVEMENTS -----------
 
@@ -224,51 +209,45 @@
 %   \vspace{2pt}
 %   \resumeSubHeadingListStart
 %     \small{\item{
-%         \textbf{Placeholder title:}{ Placeholder body} \\ \vspace{3pt}
+%         \textbf{Award of Excellence Scholarship:}{ Awarded $28,000 based on 98\% entrance GPA. } \\ \vspace{3pt}
 %     }}
 %   \resumeSubHeadingListEnd
-
-
 
 %----------- PROJECTS -----------
 
 \section{Projects}
     \vspace{3pt}
     \resumeSubHeadingListStart
-      
+	
       \resumeProjectHeading
-        {\textbf{Multithreaded Train Scheduler} $|$ \emph{\href{https://github.com/NathanPannell/multi-thread-schedulers}{\color{blue}GitHub}}}{}
+        {\textbf{Multithreaded Train Scheduler} $|$ \emph{\href{https://github.com/NathanPannell/multi-thread-scheduler}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented multithreading using C and the Pthread library to simulate a train station coordinator.}
+            \resumeItem{Implemented multithreading using \textbf{C} and the \textbf{Pthread} library to simulate a train station coordinator.}
           \resumeItemListEnd
-      
+		  
       \resumeProjectHeading
         {\textbf{Interactive Hackathon Visualizer} $|$ \emph{\href{https://github.com/NathanPannell/uttt-visual}{\color{blue}GitHub}} $|$
-        \emph{\href{https://www.uttt-visual.vercel.app }{\color{blue}Website}}
-        }{}
+        \emph{\href{https://uttt-visual.vercel.app }{\color{blue}Website}}}{}
           \resumeItemListStart
-            \resumeItem{Created a visualization tool used by UVic AI in their 2024 February UTTT Hackathon, by using ReactJS and MongoDB to broadcast the tournament results to participants in real-time.}
-            \resumeItem{Designed a base-81 encoding scheme to effectively represent game positions as strings..}
+            \resumeItem{Created a visualization tool used by UVic AI in their 2024 February UTTT Hackathon, by using \textbf{React} and \textbf{MongoDB} to broadcast the tournament results to participants in real-time.}
+            \resumeItem{Designed a \textbf{base-81 encoding scheme} to effectively represent game positions as strings.}
           \resumeItemListEnd
-      
+		  
       \resumeProjectHeading
         {\textbf{Wildfire Simulation} $|$ \emph{\href{https://github.com/uvicaiclub/WildfireManagementRL}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Created a cellular automata model of wildfire spread to act as a training environment for UVic AI’s reinforcement learning project to be presented at CUCAI this March using Python and OpenAI Gymnasium.}
-            \resumeItem{Parallelized calculations using NumPy vector operations to improve scaling runtime.}
+            \resumeItem{Created a cellular automata model of wildfire spread to act as a training environment for UVic AI’s reinforcement learning project to be presented at CUCAI this March using \textbf{Python} and \textbf{OpenAI Gymnasium.}}
+            \resumeItem{Parallelized calculations using \textbf{NumPy} vector operations to improve scaling runtime.}
           \resumeItemListEnd
-
-        \resumeProjectHeading
+		  
+      \resumeProjectHeading
         {\textbf{Virtual Rubik's Cube} $|$ \emph{\href{https://github.com/NathanPannell/virtual-cube}{\color{blue}GitHub}} $|$
-        \emph{\href{https://www.nathanpannell.github.io/virtual-cube/}{\color{blue}Website}}
-        
-        }{}
+        \emph{\href{https://nathanpannell.github.io/virtual-cube/cube.html}{\color{blue}Website}}}{}
           \resumeItemListStart
-            \resumeItem{Built a fully interactive 3D Rubik's cube with JavaScript to explore my interest in puzzles.}
+            \resumeItem{Built a fully interactive 3D Rubik's cube with \textbf{JavaScript} to explore my interest in puzzles.}
           \resumeItemListEnd
-      
+		  
     \resumeSubHeadingListEnd
-
 
 %----------- SKILLS -----------
 
@@ -276,16 +255,11 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        
         \textbf{Programming Languages:}{ Python, JavaScript, HTML/CSS, SQL, C, Java, VBA, R, Ruby} \\ \vspace{3pt}
-        
         \textbf{Software Development:}{ Git, Github, Visual Studio Code, Windows 10/11, Linux, Trello } \\ \vspace{3pt}
-        
         \textbf{Technologies:}{ React, Tailwind, JQuery, Wordpress, REST APIs, Excel, Outlook } \\ \vspace{3pt}
-
     }}
   \resumeSubHeadingListEnd
-
 
 %----------- RELEVANT COURSEWORK -----------
 
@@ -293,13 +267,10 @@
   % \vspace{2pt}
   % \resumeSubHeadingListStart
     % \small{\item{
-        % \textbf{Major coursework:}{ Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision} \\ \vspace{3pt}
-        
-        % \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms, Computer Organization, Fundamentals of Software Engineering}
+        % \textbf{Major coursework:}{ 1, 2, 3, 4 } \\ \vspace{3pt}
+        % \textbf{Minor coursework:}{ 1, 2, 3, 4 }
     % }}
   % \resumeSubHeadingListEnd
-
-
 
 %----------- CERTIFICATES -----------
 
@@ -307,32 +278,26 @@
   % \resumeSubHeadingListStart
     
     % \resumeOrganizationHeading
-      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
-    
+      % {Tensorflow Certification}{Jun 2024}{Deep learning, Tensorflow, Keras, PyCharm, NLP, AEs}
+
   % \resumeSubHeadingListEnd
-
-
 
 %----------- ORGANIZATIONS -----------
 
 % \section{Organizations}
   % \resumeSubHeadingListStart
-    
+
     % \resumeOrganizationHeading
-      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
-    
+      % {University of Victoria Artificial Intelligence Club (UVic AI)}{Oct 2023 -- Present}{Simulation Executive}
+
   % \resumeSubHeadingListEnd
-
-
 
 %----------- HOBBIES -----------
 
 % \section{Hobbies}
   % \resumeSubHeadingListStart
-    % \small{\item{Basketball, Swimming, Fitness, Eight-ball, Horology}}
+    % \small{\item{Hiking, Rubik's Cubes, Video Games, Card Games}}
   % \resumeSubHeadingListEnd
-
-
 
 %----------- REFERENCES -----------
 
@@ -341,8 +306,6 @@
   % \resumeSubHeadingListStart
     % \item{References available upon request.}
   % \resumeSubHeadingListEnd
-
-
 
 %-------------------------------------------
 \end{document}
