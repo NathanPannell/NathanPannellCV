@@ -24,10 +24,10 @@
 
 %---------- FONT OPTIONS ----------
 % sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
+\usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
 
 % serif
 % \usepackage{CormorantGaramond}
@@ -54,8 +54,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{3pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -70,7 +70,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{5pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -87,14 +87,14 @@
 \newcommand{\resumeEducationHeading}[6]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-      \textit{\small#5} & \textit{\small #6} \\
+      #1 & #2 \\
+      \small#3 & \small #4 \\
+      \small#5 & \small #6 \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \vspace{-2pt}\item
+    \vspace{5pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
@@ -125,19 +125,17 @@
 %---------- HEADING ----------
 
 \begin{center}
-    \textbf{\Huge \scshape Nathan Pannell} \\ \vspace{3pt}
+    \textbf{\Huge \scshape Nathan Pannell} \\ \vspace{10pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:16042022018}{+1 604 202 2018}
+    \hspace{.5pt} \href{tel:16042022018}{604 202 2018}
     $|$
-    \faAt \hspace{.5pt} \href{mailto:contact@nathanpannell.com}{contact@nathanpannell.com}
+    \hspace{.5pt} \href{mailto:contact@nathanpannell.com}{contact@nathanpannell.com}
     $|$
-    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/nathanpannell}{LinkedIn}
+    \hspace{.5pt} \href{https://www.linkedin.com/in/nathanpannell}{\textbf{linkedin}.com/in/nathanpannell}
     $|$
-    \faGithub \hspace{.5pt} \href{https://github.com/nathanpannell}{GitHub}
+    \hspace{.5pt} \href{https://github.com/nathanpannell}{\textbf{github}.com/nathanpannell}
     $|$
-    \faGlobe \hspace{.5pt} \href{https://nathanpannell.com}{Portfolio}
-    $|$
-    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/University+of+Victoria/@48.4631345,-123.3147566,17z/data=!3m1!4b1!4m6!3m5!1s0x548f71575d850fbd:0xc039d0b85e1ede74!8m2!3d48.4631345!4d-123.3121763!16zL20vMDd3bHQ?entry=ttu}{Victoria, BC}
+    \hspace{.5pt} \href{https://nathanpannell.com}{nathanpannell.com}
 \end{center}
 
 %----------- EDUCATION -----------
@@ -146,60 +144,55 @@
   \vspace{3pt}
   \resumeSubHeadingListStart
     \resumeEducationHeading
-      {University of Victoria}{Victoria, BC}
-      {B.Sc. of Computer Science (Honours) | \textbf{GPA: 3.8/4.0}}{Sep 2021 \textbf{--} Dec 2025}
-      {Award of Excellence Scholarship}{Jun 2021}
-        \resumeSubHeadingListStart
-        \small{\item{
-            \textbf{Relevant coursework:} Object-oriented and functional programming, algorithms, data structures, operating systems, matrix algebra, computer architecture, statistics, calculus, relational databases, numerical methods.
-            }}
-        \resumeSubHeadingListEnd
+      {\textbf{University of Victoria} $|$ Victoria, BC}{Sept 2021 \textbf{--} Dec 2025}
+      {B.Sc. of Computer Science Honours with Business Minor}{}
+      {\textbf{--} Award of Excellence Scholarship}{Jun 2021}
   \resumeSubHeadingListEnd
 
 %----------- EXPERIENCE -----------
 
 \section{Experience}
-  \vspace{3pt}
+  \vspace{-3pt}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {UVic AI}{Victoria, BC}
-      {Simulation Executive}{Jan 2024 \textbf{--} Present, Part-time}
+      {Simulation Executive}{Jan 2024 \textbf{--} Present}
+      {UVic AI, Victoria, BC}{Part-time}
         \resumeItemListStart
             \resumeItem{\textbf{Co-hosted UVic AI’s 2024 hackathon} and developed a framework to process and represent entrants.}
             \resumeItem{Led team developing a Python simulation environment for the \href{https://www.cucai.ca}{Canadian Undergraduate Conference on AI.}}
         \resumeItemListEnd
 
     \resumeSubheading
-      {Sidekick Players $|$ \emph{\href{https://www.sidekickplayers.ca/}{\color{blue}Website}}}{Remote}
-      {Front-end Web Developer}{Sep 2023 \textbf{--} Present, Freelance}
+      {Front-end Web Developer}{Sep 2023 \textbf{--} Present}
+      {Sidekick Players, Remote}{Freelance}
         \resumeItemListStart
             \resumeItem{Designed a modern website in collaboration with the organization’s president, using \textbf{React} and \textbf{Tailwind.}}
             \resumeItem{\textbf{Managed migration} including acquiring a new domain, rerouting previous website, and hosting with Vercel.}
         \resumeItemListEnd
 
     \resumeSubheading
-      {AMJ Campbell}{Delta, BC}
-      {Business Automation Developer}{May 2023 \textbf{--} Aug 2023, Internship}
+      {Business Automation Developer}{May \textbf{--} Aug 2023}
+      {AMJ Campbell, Delta, BC}{Internship}
         \resumeItemListStart
             \resumeItem{Implemented a suite of automation macros to save \textbf{20+ hours of work} weekly, by using VBA to download, process, and present data in detailed spreadsheet reports and ready-to-send emails for clients.}
             \resumeItem{Improved efficiency by \textbf{1 hour per day} by integrating \textbf{Google Maps API} to automate mileage cost calculation.}
         \resumeItemListEnd
 
-    \resumeSubheading
-      {AMJ Campbell}{Delta, BC}
-      {Accounting Clerk}{May 2022 \textbf{--} Sep 2022, Internship}
-        \resumeItemListStart
-            \resumeItem{Developed Excel templates to \textbf{reduce errors by 50\%}, and introduced \textbf{VBA macros} to process CSV reports.}
-            \resumeItem{Executed payroll, accounts payable, and accounts receivable duties for Vancouver, Kelowna, and Victoria.}
-        \resumeItemListEnd
+    % \resumeSubheading
+    %   {Accounting Clerk}{May \textbf{--} Sep 2022}
+    %   {AMJ Campbell, Delta, BC}{Internship}
+    %     \resumeItemListStart
+    %         \resumeItem{Developed Excel templates to \textbf{reduce errors by 50\%}, and introduced \textbf{VBA macros} to process CSV reports.}
+    %         \resumeItem{Executed payroll, accounts payable, and accounts receivable duties for Vancouver, Kelowna, and Victoria.}
+    %     \resumeItemListEnd
 
-    \resumeSubheading
-      {Niagara Falls Restaurant}{Delta, BC}
-      {Server}{Nov 2018 \textbf{--} Jul 2021, Part-time}
-        \resumeItemListStart
-            \resumeItem{Mastered \textbf{clear communication}, customer service, and multi-tasking in a high-pressure environment.}
-        \resumeItemListEnd
+    % \resumeSubheading
+    %   {Server}{Nov 2018 \textbf{--} Jul 2021}
+    %   {Niagara Falls Restaurant, Delta, BC}{Part-time}
+    %     \resumeItemListStart
+    %         \resumeItem{Mastered \textbf{clear communication}, customer service, and multi-tasking in a high-pressure environment.}
+    %     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 
@@ -219,12 +212,21 @@
     \vspace{3pt}
     \resumeSubHeadingListStart
 	
+      % \resumeProjectHeading
+      %   {\textbf{Multithreaded Train Scheduler} $|$ \emph{\href{https://github.com/NathanPannell/multi-thread-scheduler}{\color{blue}GitHub}}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Implemented multithreading using \textbf{C} and the \textbf{Pthread} library to simulate a train station coordinator.}
+      %     \resumeItemListEnd
+
       \resumeProjectHeading
-        {\textbf{Multithreaded Train Scheduler} $|$ \emph{\href{https://github.com/NathanPannell/multi-thread-scheduler}{\color{blue}GitHub}}}{}
+        {\textbf{Wildfire Simulation with AI Agents} $|$ \emph{\href{https://github.com/uvicaiclub/WildfireManagementRL}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{Implemented multithreading using \textbf{C} and the \textbf{Pthread} library to simulate a train station coordinator.}
+            \resumeItem{Created a cellular automata model of wildfire spread to act as a training environment for UVic AI’s reinforcement learning project to be presented at CUCAI this March using \textbf{Python} and \textbf{OpenAI Gymnasium.}}
+            \resumeItem{Developed a novel wildfire simulation approach, including AI firefighter agents within the simulation itself.}
+            \resumeItem{Parallelized all calculations using \textbf{NumPy} vector operations to improve scaling runtime.}
+            \resumeItem{Employed convolutions using an elliptical kernel to accurately model wind's effect on fire spread.}
           \resumeItemListEnd
-		  
+    
       \resumeProjectHeading
         {\textbf{Interactive Hackathon Visualizer} $|$ \emph{\href{https://github.com/NathanPannell/uttt-visual}{\color{blue}GitHub}} $|$
         \emph{\href{https://uttt-visual.vercel.app }{\color{blue}Website}}}{}
@@ -234,17 +236,11 @@
           \resumeItemListEnd
 		  
       \resumeProjectHeading
-        {\textbf{Wildfire Simulation} $|$ \emph{\href{https://github.com/uvicaiclub/WildfireManagementRL}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Created a cellular automata model of wildfire spread to act as a training environment for UVic AI’s reinforcement learning project to be presented at CUCAI this March using \textbf{Python} and \textbf{OpenAI Gymnasium.}}
-            \resumeItem{Parallelized calculations using \textbf{NumPy} vector operations to improve scaling runtime.}
-          \resumeItemListEnd
-		  
-      \resumeProjectHeading
         {\textbf{Virtual Rubik's Cube} $|$ \emph{\href{https://github.com/NathanPannell/virtual-cube}{\color{blue}GitHub}} $|$
         \emph{\href{https://nathanpannell.github.io/virtual-cube/cube.html}{\color{blue}Website}}}{}
           \resumeItemListStart
-            \resumeItem{Built a fully interactive 3D Rubik's cube with \textbf{JavaScript} to explore my interest in puzzles.}
+            \resumeItem{Built an interactive Rubik's cube with \textbf{JavaScript} to explore the inner workings of my favourite puzzle.}
+            \resumeItem{Used \textbf{CSS} rotations and mouse input tracking to make a 3D cube responsive on mobile and desktop.}
           \resumeItemListEnd
 		  
     \resumeSubHeadingListEnd
@@ -255,7 +251,7 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming Languages:}{ Python, JavaScript, HTML/CSS, SQL, C, Java, VBA, R, Ruby} \\ \vspace{3pt}
+        \textbf{Programming Languages:}{ Python, JavaScript, HTML/CSS, VBA, Java, C, SQL, R} \\ \vspace{3pt}
         \textbf{Software Development:}{ Git, Github, Visual Studio Code, Windows 10/11, Linux, Trello } \\ \vspace{3pt}
         \textbf{Technologies:}{ React, Tailwind, JQuery, Wordpress, REST APIs, Excel, Outlook } \\ \vspace{3pt}
     }}
